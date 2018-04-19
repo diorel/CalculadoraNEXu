@@ -1,10 +1,12 @@
 
-function CargarPagina(){
+function Calculadora(){
 
-
+    //variables glovales
         var operandoa;
         var operandob;
         var operacion;
+
+
 
 
         //variables
@@ -27,47 +29,84 @@ function CargarPagina(){
         var cero = document.getElementById('0');
 
 
-        uno.onclick = function(e){
-          if (display.textContent = 0) {
-            display.textContent = display.textContent  + "";
-              display.textContent = display.textContent  + "1";
-          }
-          else
-          {
-            display.textContent = display.textContent  + "0";
-          }
 
 
+
+    // Teclas numericas
+     uno.onclick = function(e){
+        if (display.textContent =="0" ) {
+          display.textContent = "";
 
 
         }
+        display.textContent = display.textContent  + "1";
+        }
+
+
         dos.onclick = function(e){
+          if (display.textContent =="0" ) {
+            display.textContent = "";
+          }
             display.textContent = display.textContent  + "2";
         }
         tres.onclick = function(e){
+          if (display.textContent =="0" ) {
+            display.textContent = "";
+          }
             display.textContent = display.textContent  + "3";
         }
         cuatro.onclick = function(e){
+          if (display.textContent =="0" ) {
+            display.textContent = "";
+          }
             display.textContent = display.textContent  + "4";
         }
         cinco.onclick = function(e){
+          if (display.textContent =="0" ) {
+            display.textContent = "";
+          }
             display.textContent = display.textContent  + "5";
         }
         seis.onclick = function(e){
+          if (display.textContent =="0" ) {
+            display.textContent = "";
+          }
             display.textContent = display.textContent  + "6";
         }
         siete.onclick = function(e){
+          if (display.textContent =="0" ) {
+            display.textContent = "";
+          }
             display.textContent = display.textContent  + "7";
         }
         ocho.onclick = function(e){
+          if (display.textContent =="0" ) {
+            display.textContent = "";
+          }
             display.textContent = display.textContent  + "8";
         }
         nueve.onclick = function(e){
+          if (display.textContent =="0" ) {
+            display.textContent = "";
+          }
             display.textContent = display.textContent  + "9";
         }
+
         cero.onclick = function(e){
+          if (display.textContent =="0" ) {
+            display.textContent = "";
+          }
             display.textContent = display.textContent  + "0";
         }
+
+
+        punto.onclick = function(e){
+          if (display.textContent =="0" ) {
+            display.textContent = "";
+          }
+            display.textContent = display.textContent  + ".";
+        }
+
 
         on.onclick = function(e){
             resetear2();
@@ -129,10 +168,6 @@ function CargarPagina(){
         display.textContent = "";
       }
 
-
-
-
-
       function resetear(){
         display.textContent = "";
         operandoa = 0;
@@ -140,36 +175,12 @@ function CargarPagina(){
         operacion = "";
       }
 
-
-
-            function resetear2(){
-              display.textContent = "0";
-              operandoa = 0;
-              operandob = 0;
-              operacion = "";
-            }
-
-
-
-
+       function resetear2(){
+        display.textContent = "0";
+        operandoa = 0;
+        operandob = 0;
+        operacion = "";
+      }
 
 }
-
-
-
-
-
-
-
-
-  function CargarPagina2() {
-
-
-
-         }
-
-
-
-
-
-      document.body.onload = CargarPagina;
+      document.body.onload = Calculadora;
